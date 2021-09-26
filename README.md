@@ -24,8 +24,8 @@ The project0.py script in https://github.com/scalableinternetservices/ucsb_websi
 Follow the directions in the README to clone the repository, install the python dependencies, and run the verification script.
 
 ## Questions To Answer
-On average, how many requests can ab complete in 10 seconds with all the power of two concurrency levels between 1 and 256 (i.e., 1, 2, 4, 8, 16, 32, 64, 128, 256)?
-Why are there diminishing returns at higher concurrency levels?
-What’s the performance difference when requesting HTTP and HTTPS?
-How can github respond so quickly?
-What is your site’s “Time to Interactive” according to PageSpeed Insights?
+1. On average, how many requests can ab complete in 10 seconds with all the power of two concurrency levels between 1 and 256 (i.e., 1, 2, 4, 8, 16, 32, 64, 128, 256)?
+2. Why are there diminishing returns at higher concurrency levels?
+3. What’s the performance difference when requesting HTTP and HTTPS?
+4. How can github respond so quickly?
+5. What is your site’s “Time to Interactive” according to PageSpeed Insights?
