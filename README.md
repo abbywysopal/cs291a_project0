@@ -51,9 +51,10 @@ Follow the directions in the README to clone the repository, install the python 
   128 -> 176426.4 vs 33305.7
   256 -> 345189.0 vs 36805.9
   
+  HTTP performance doubles in performance as the number of concurrency levels. HTTPS performance starts to diminishing returns at higher concurrency levels.
 
 4. How can github respond so quickly?
-  
+  Github Pages is fronted by Fastly. GitHub has a dedicated IP address in each datacenter, allowing hundreds of thousands of custom domains created with Pages to pass through Fastly.
 
 5. What is your site’s “Time to Interactive” according to PageSpeed Insights?
   0.8s
