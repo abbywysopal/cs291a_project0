@@ -25,7 +25,35 @@ Follow the directions in the README to clone the repository, install the python 
 
 ## Questions To Answer
 1. On average, how many requests can ab complete in 10 seconds with all the power of two concurrency levels between 1 and 256 (i.e., 1, 2, 4, 8, 16, 32, 64, 128, 256)?
+  concurrency level -> average number of requests ab can complete in 10 seconds
+  1 -> 81.7
+  2 -> 686.3
+  4 -> 1214.9
+  8 -> 2300.8
+  16 -> 4604.9
+  32 -> 13612.2
+  64 -> 27082.9
+  128 -> 33305.7
+  256 -> 36805.9
+  
 2. Why are there diminishing returns at higher concurrency levels?
+  Amdahl's law predicts that parallel computing will reach a maximum speedup. Because of this the number of requests completed in 10 seconds will reach a plato at high levels of concurrency as shown in question 1.
+
 3. What’s the performance difference when requesting HTTP and HTTPS?
+  concurrency level -> average number of requests ab can complete in 10 seconds HTTP vs HTTPS
+  1 -> 1196.5 vs 81.7
+  2 -> 2461.9 vs 686.3
+  4 -> 4929.6 vs 1214.9
+  8 -> 10231.7 vs 2300.8
+  16 -> 21589.7 vs 4604.9
+  32 -> 43640.8 vs 13612.2
+  64 -> 87164.7 vs 27082.9
+  128 -> 176426.4 vs 33305.7
+  256 -> 345189.0 vs 36805.9
+  
+
 4. How can github respond so quickly?
+
+
 5. What is your site’s “Time to Interactive” according to PageSpeed Insights?
+  0.8s
